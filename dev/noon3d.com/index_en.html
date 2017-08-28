@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Бинокуляр &laquo;Noon&raquo;</title>
+    <meta name="keywords" content="binocular, binoculus, panorama, virtual, urban, city installation, view square, virtual panorama, stationary telescope, stationary binoculus"/>
+    <meta name="description" content="binocular, binoculus, panorama, virtual, urban, city installation, view square, virtual panorama, stationary telescope, stationary binoculus"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#333"/>
+    <link rel="shorcut icon" href="favicon.ico"/>
+    <link rel="icon" type="image/png" href="src/img/fav_32.png" sizes="32x32"/>
+    <link rel="apple-touch-icon" sizes="120x120" href="src/img/apple_120.png"/>
+    <link rel="apple-touch-icon" sizes="152x152" href="src/img/apple_152.png"/>
+    <meta name="msapplication-TileColor" content="#000000"/>
+    <meta name="msapplication-TileImage" content="/src/img/ms_144.png"/>
+    <link rel="stylesheet" href="src/style/style.css" type="text/css"/>
+    <script src="src/js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var height = 270;
+            var width = 359;
+            var image;
+            for(var i = 1; i <= 30; i++)
+            {
+                image = new Image(height, width);
+                image.src = 'src/img/noon/'+i+'.png';
+                //console.log(image);
+                image = 0;
+            }
+        });
+    </script>
+</head>
+<body>
+    <header id="noon-header">
+        <h1 id="noon-page-title"><i></i><small>Бинокуляр <i>Noon</i></small></h1>
+        <nav id="noon-nav">
+            <i id="noon-hide-menu"></i>
+            <a href="http://noon3d.com/"><img src="src/img/logo.svg" height="18" width="62" id="noon" alt="Бинокуляр &laquo;Noon&raquo;"/></a>
+            <ul id="noon-menu"><li class="noon-menu-option active"><a href="#binoculus">Binocular <i>Noon</i></a></li><li class="noon-menu-option"><a href="#benefits">Benefits</a></li><li class="noon-menu-option"><a href="#possibilities">Possibilities</a></li><li class="noon-menu-option"><a href="#use">Use</a></li><li class="noon-menu-option"><a href="#contacts">Contacts</a></li></ul>
+            <a id="download-pdf" href="/downloads/presentation.pdf" target="_blank"><img src="src/img/download.png"/>Download pdf</a>
+            <div id="noon-language"><a href="http://noon3d.com/">РУС</a><a href="http://noon3d.com/en/">ENG</a></div>
+        </nav>
+    </header>
+    <main id="noon-main">
+        <section id="binoculus" class="noon-tab">
+            <div class="noon-tab-content">
+                <div class="noon-binoculus-highlight"><h2 class="noon-description">Binocular <i>Noon</i> &mdash; a new way to interact with transferred reality<a href="#video"><img src="src/img/watch.png"/>Watch video</a></h2><img src="src/img/bg_noon1.jpg" class="noon-bg1"/><div id="binoculus-view"><img src="src/img/top-pole.png" class="noon-top-pole"/><img src="src/img/noon/30.png" id="noon-binoculus" class="noon-rotatation"/><img src="src/img/bottom-pole.png" class="noon-bottom-pole"/></div></div>
+            </div>
+        </section>
+        <section id="benefits" class="noon-tab">
+            <div class="noon-tab-content">
+                <img src="src/img/bg_noon2.jpg" class="noon-bg2"/>
+                <a href="http://vimeo.com/#noon3d" id="noon-video2" target="_blank"><img src="src/img/video_preview_2.jpg"/></a>
+                <ul class="noon-property-list"><li class="noon-property-option"><div class="noon-icon icon dimension"></div><span class="noon-property-option-label">It's possible to view panoramic content by simply turning the device</span></li><li class="noon-property-option"><div class="noon-icon icon rotate"></div><span class="noon-property-option-label">An angle range of 360 degrees vertically and ±30 degrees horizontally</span></li><li class="noon-property-option"><div class="noon-icon icon sound"></div><span class="noon-property-option-label">Sound image changes depending on the rotation of the device</span></li><li class="noon-property-option"><div class="noon-icon icon placement"></div><span class="noon-property-option-label">You can navigate through content and get additional information with 'active spots'</span></li><li class="noon-property-option"><div class="noon-icon icon dim"></div><span class="noon-property-option-label">Animated 3D objects and characters can be used, visualized in real time</span></li><li class="noon-property-option"><div class="noon-icon icon var"></div><span class="noon-property-option-label">Two options of the binocular: indoor and street models</span></li></ul>
+            </div>
+        </section>
+        <section id="possibilities" class="noon-tab">
+            <div class="noon-tab-content">
+                <div id="noon-panorama">
+                    <img src="src/img/noon-panorama-present.jpg" id="noon-panorama-present"/>
+                    <div id="noon-panorama-old">
+                        <img src="src/img/noon-panorama-old.jpg"/>
+                    </div>
+                    <div id="noon-panorama-slider"><div class="icon move-left"></div><div class="icon noon"></div><div class="icon move-right"></div></div>
+                </div>
+                <h2 class="noon-tab-title">Binocular <i>Noon</i> allows:</h2>
+                <ul class="noon-possibilities"><li class="noon-possibilities-article">Travel in time and see what the surroundings were like hundreds of years ago</li><li class="noon-possibilities-article">Take a virtual tour and see landscapes from a bird`s eye</li><li class="noon-possibilities-article">Observe planned buildings and their construction in a virtual space</li><li class="noon-possibilities-article">Get to know a product in transferred reality</li><li class="noon-possibilities-article">Obtain additional information about objects through 'active spots'</li><li class="noon-possibilities-article">Bearings in a new town through panoramic content</li></ul>
+            </div>
+        </section>
+        <section id="use" class="noon-tab">
+            <div class="noon-tab-content">
+                <img src="src/img/bg_noon4.jpg" class="noon-bg4"/>
+                <article class="noon-use-article">
+                    <h3 class="noon-use-article-preview-title"><div class="noon-nfg icon museum big"></div></h3>
+                    <div class="noon-use-article-preview-content"><h6>Museums</h6>Historical reconstruction — transferring reality in time with all attributing artifacts.</div>
+                    <div class="noon-use-article-preview-picture"><img src="src/img/use-museum.jpg" alt="Noon &mdash; Музеи"/></div>
+                </article><article class="noon-use-article" style="border-color: rgba(255,255,255,.6);">
+                    <h3 class="noon-use-article-preview-title"><div class="noon-nfg icon city big"></div></h3>
+                    <div class="noon-use-article-preview-content"><h6>In the city</h6>High resolution virtual tours, shot from a bird`s eye view.</div>
+                    <div class="noon-use-article-preview-picture"><img src="src/img/use-city.jpg" alt="Noon &mdash; Города"/></div>
+                </article><article class="noon-use-article">
+                    <h3 class="noon-use-article-preview-title"><div class="noon-nfg icon presentations big"></div></h3>
+                    <div class="noon-use-article-preview-content"><h6>Exhibitions</h6>Product presentation, visualization of future architectural objects.</div>
+                    <div class="noon-use-article-preview-picture"><img src="src/img/use-presents.jpg" alt="Noon &mdash; Города"/></div>
+                </article>
+            </div>
+        </section>
+        <section id="contacts" class="noon-tab">
+            <div class="noon-tab-content">
+                <img src="src/img/bg_noon5.jpg" class="noon-bg5"/>
+                <form id="noon-feedback" method="post">
+                    <h6 class="noon-tab-title">Below you can write us your questions or make <u>pre-order</u> for the &laquo;Noon&raquo; device</h6>
+                    <div class="noon-input-row"><input name="name" placeholder="Name" type="text" tabindex="1"/></div>
+                    <div class="noon-input-row"><input name="email" placeholder="E-mail" type="text" tabindex="2"/></div>
+                    <div class="noon-input-row"><input name="message_title" placeholder="Theme" type="text" tabindex="3"/></div>
+                    <div class="noon-input-row"><textarea name="message" rows="8" placeholder="Message" tabindex="5"></textarea></div>
+                    <button class="noon-form-sbtn" type="submit" tabindex="6">send</button>
+                </form>
+            </div>
+        </section>
+        <footer id="noon-footer" class="noon-tab">
+            <img src="src/img/polden.png" alt="Студия &laquo;Polden&raquo;" id="poldenfx"/>
+            &laquo;Noon&raquo; is created by studio &laquo;Polden&raquo;
+        </footer>
+        <nav id="noon-phone-navigation">
+            <a href="#contacts" class="icon write-us"></a>
+        </nav>
+    </main>
+    <div id="noon-hidden">
+        <script src="src/js/app.js"></script>
+    </div>
+</body>
+</html>
